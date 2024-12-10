@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .general-div{
+            
+            display: flex;
+            width:500px;
+            margin: 0 auto;
+            color: white;
+            gap: 15px;
+            margin-top: 60px;
+            border: none;
+        }
+        .blue{
+            width:200px;
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            margin-left: 10px;
+            border: none;
+        }
+        #black{
+            width:200px;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border: none;
+        }
+        .white{
+            width:200px;
+            background-color: whitesmoke;
+            color: black;
+            padding: 10px;
+            border: none;
+        }
+
+        .green{
+            width:200px;
+            background-color: green;
+            padding: 10px;
+            color: white;
+            border: none;
+            
+        }
+    </style>
+
+</head>
+<body>
+    <div class="general-div">
+        <button class="blue">💙 Blue</button>
+        <button id="black">🖤 Black</button>
+        <button class="green">💚 Green</button>
+        <button class="white">❤ White</button>
+
+    </div>
+    <script>
+        
+       let blue=document.querySelector('.blue');
+       let black=document.querySelector("#black");
+       let green=document.querySelector('.green');
+       let white=document.querySelector('.white');
+       let body =document.getElementsByTagName('.body');
+       let btn=document.getElementsByName("button");
+       blue.addEventListener('click',()=>{
+       document.body.style.background='blue';});
+       black.addEventListener('click',()=>{
+            document.body.style.background="black"
+        })
+        // green color
+    green.addEventListener('click',()=>{
+        document.body.style.backgroundColor="green";
+    })
+    // white color
+    white.addEventListener('click',()=>{
+        document.body.style.backgroundColor="white";
+    })
+    // changing background color
+           white.style.backgroundColor="red";
+   
+
+    
+       
+
+
+
+
+ 
+        
+    </script>
+</body>
+</html>
